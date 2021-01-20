@@ -4,35 +4,427 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<!-- Заголовок презентации -->
+		<title>Планиметрия</title>
+		<meta name="description" content="GIT">
+		<!-- Информация об авторе -->
+		<meta name="author" content="Алексеева Аня">
+		<link rel="author" href="https://github.com/anya0906"> 
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
 
-		<!-- Theme used for syntax highlighted code -->
+		<!-- Тема презентации -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Планиметрия</section>
-				<section>Слайд 2</section>
+				<!-- Класс center используется для вертикальной центровки -->
+				<!-- data-markdown-separator="^Notes:" позволяет писать комментарии к слайду -->
+				<!-- data-markdown и <script type="text/template"> позволяет использовать markdown синтаксис -->
+					<section class="center" data-markdown data-markdown-separator="^Notes:">
+						<script type="text/template">
+							Планиметрия
+							===========
+	
+							Notes: Заголовок презентации
+						</script>
+					</section>
+
+					<section data-markdown data-markdown-separator="^Notes:">
+						<script type="text/template">
+							Определение 
+							-----------
+	
+							Планиметрия — раздел евклидовой геометрии, 
+							изучающий двумерные (одноплоскостные) фигуры, 
+							то есть фигуры, которые можно расположить в 
+							пределах одной плоскости: треугольники, 
+							окружности, параллелограммы и т.д.
+						</script>
+					</section>
+
+					<section data-markdown data-markdown-separator="^Notes:">
+						<script type="text/template">
+							Определение круга
+							-----------------
+	
+							Круг — это часть плоскости, ограниченная окружностью.
+							Центр данной окружности называется центром круга, 
+							а расстояние от центра до любой точки окружности — 
+							радиусом круга
+						</script>
+					</section>
+
+					<section data-markdown data-markdown-separator="^Notes:">
+						<script type="text/template">
+							Определение квадрата
+							--------------------
+	
+							Квадрат — это правильный четырёхугольник, 
+							у которого все стороны и углы равны между 
+							собой.
+						</script>
+					</section>
+
+					<section data-markdown data-markdown-separator="^Notes:">
+						<script type="text/template">
+							Определение треугольника
+							------------------------
+	
+							Треугольник — геометрическая фигура, образованная 
+							тремя отрезками, которые соединяют три точки, 
+							не лежащие на одной прямой.
+						</script>
+					</section>
+
+					<section data-markdown data-markdown-separator="^Notes:">
+						<script type="text/template">
+							Определение параллелограмма
+							---------------------------
+	
+							Параллелограамм — это четырехугольник, 
+							у которого противоположные стороны попарно параллельны,
+							то есть лежат на параллельных прямых.
+						</script>
+					</section>
+
+					<section data-markdown data-markdown-separator="^Notes:">
+						<script type="text/template">
+							Определение трапеции
+							--------------------
+	
+							Трапеция — выпуклый четырехугольник, у которого 
+							две стороны параллельны, а две другие не параллельны.
+						</script>
+					</section>
+
+					<section data-markdown data-markdown-separator="^Notes:">
+						<script type="text/template">
+							Определение ромба
+							-----------------
+	
+							Ромб  — это параллелограмм, 
+							у которого все стороны равны.
+						</script>
+					</section>
+
+					<section data-markdown data-markdown-separator="^Notes:">
+						<script type="text/template">
+							Периметр круга
+							-----------------
+							Периметр круга равен удвоенному произведению числа $\pi$  на радиус. 
+							Формула нахождения периметра круга:
+
+							$$P=2 \pi R,$$
+
+							где  P  — периметр круга, а  R  — радиус круга.
+
+						</script>
+					</section>
+
+					<section data-markdown data-markdown-separator="^Notes:">
+						<script type="text/template">
+							Примеры
+							-------------------------
+	
+							Пусть дана окружность с радиусом $R = 4$ см. 
+							Найдем периметр фигуры:
+	
+							$P=3,14 * 4 * 2=25,12$ см
+							
+	
+						</script>
+					</section>
+
+					<section data-markdown data-markdown-separator="^Notes:">
+						<script type="text/template">
+							Периметр трапеции
+							-----------------
+							Периметр трапеции равняется сумме длин всех ее сторон.
+							Формула нахождения периметра трапеции:
+
+							$$P=a+b+c+d,$$
+
+							где  P  — периметр трапеции,   a, b, c, d  — стороны трапеции.
+
+						</script>
+					</section>
+
+					<section data-markdown data-markdown-separator="^Notes:">
+						<script type="text/template">
+							Примеры
+							-------------------------
+	
+							Найдите периметр трапеции, если ее основания равны 7 и 10 см, 
+							а боковые стороны – 4 и 5 см.
+							Найдем периметр фигуры:
+	
+							$P=7+10+4+5=26$ см
+							
+	
+						</script>
+					</section>
+
+					<section data-markdown data-markdown-separator="^Notes:">
+						<script type="text/template">
+							Периметр треугольника
+							---------------------
+							Периметр треугольника равняется сумме длин всех ее сторон.
+							
+							Формула нахождения периметра треугольника:
+
+							$$P=a+b+c,$$
+
+							где  P  — периметр трапеции,   a, b, c  — стороны треугольника.
+
+						</script>
+					</section>
+
+					<section data-markdown data-markdown-separator="^Notes:">
+						<script type="text/template">
+							Примеры
+							-------------------------
+	
+							Найдите периметр треугольника, если его стороны равны 7, 12 и 10 см.
+
+							Найдем периметр фигуры:
+	
+							$P=7+10+12=29$ см
+							
+	
+						</script>
+					</section>
+
+					<section data-markdown data-markdown-separator="^Notes:">
+						<script type="text/template">
+							Периметр параллелограмма
+							------------------------
+							Периметр параллелограмма равняется удвоенной сумме 
+							двух его смежных сторон.
+							
+							Формула нахождения периметра параллелограмма:
+
+							$$P=2(a+b),$$ 
+
+							где  P  — периметр трапеции,   a, b,   — смежные стороны.
+
+						</script>
+					</section>
+
+					<section data-markdown data-markdown-separator="^Notes:">
+						<script type="text/template">
+							Примеры
+							-------------------------
+	
+							Дан параллелограмм со сторонами 5 см и 9 см. 
+							Вычислить его периметр.
+
+							Найдем периметр фигуры:
+	
+							$P=2(5+9)=28$ см
+							
+	
+						</script>
+					</section>
+
+					<section data-markdown data-markdown-separator="^Notes:">
+						<script type="text/template">
+							Периметр квадрата и ромба
+							------------------------
+							Формулы для нахождения периметра квадрата и ромба равны.
+							Периметр равен сумме 4-х длин сторон или 
+							произведению длины любой стороны на четыре. 
+							
+							Формула нахождения периметра квадрата и ромба:
+
+							$$P=a+b+c+d, P=4a,$$ 
+
+							где  P  — периметр трапеции,   a, b, c, d   — стороны.
+
+						</script>
+					</section>
+
+					<section data-markdown data-markdown-separator="^Notes:">
+						<script type="text/template">
+							Примеры
+							-------------------------
+	
+							Найдите периметр квадрата, если его стороны равны 4 см.
+
+							Найдем периметр фигуры:
+	
+							$P=4*4=16$ см
+							
+	
+						</script>
+					</section>
+
+					<section>
+						<h2>Нахождение периметра круга</h2>
+						<!-- радиус круга -->
+						<label for="R">$R=$</label>
+						<input type="text" id="R">
+						<!-- Кнопка запуска программы -->
+						<input style="height:45px; font-size:35px" type="button" value="Посчитать периметр" id="getResult">
+						<!-- Вывод результата -->
+						<div class="center">
+						<output id="result"></output>
+					    </div>
+						<img src="Круг.png" alt="круг" height="300px" width="300px">
+					</section>
+
+					<section>
+						<h2>Нахождение периметра трапеции</h2>
+						<!-- стороны трапеции -->
+						<label for="a">$a=$</label>
+						<input type="text" id="a">
+						<label for="b">$b=$</label>
+						<input type="text" id="b">
+						<label for="c">$c=$</label>
+						<input type="text" id="c">
+						<div class="center">
+						<label for="d">$d=$</label>
+						<input type="text" id="d"></div>
+						<!-- Кнопка запуска программы -->
+						<input style="height:45px; font-size:35px" type="button" value="Посчитать периметр" id="getResult1">
+						<!-- Вывод результата -->
+						<div class="center">
+						<output id="result1"></output></div>
+						<img src="Трапеция.png" alt="круг" height="250px" width="350px" >
+
+					</section>
+
+					<section>
+						<h2>Нахождение периметра треугольника</h2>
+						<!-- стороны треугольника -->
+						<label for="a1">$a=$</label>
+						<input type="text" id="a1">
+						<label for="b1">$b=$</label>
+						<input type="text" id="b1">
+						<label for="c1">$c=$</label>
+						<input type="text" id="c1">
+						<!-- Кнопка запуска программы -->
+						<div class="center">
+						<input style="height:45px; font-size:35px" type="button" value="Посчитать периметр" id="getResult2">
+						<!-- Вывод результата -->
+						<output id="result2"></output>
+					    </div>
+						<img src="Треугольник.jpg" alt="круг" height="300px" width="300px">
+					</section>
+
+					<section class="center" data-menu-title="Заключительный слайд">
+						Спасибо за внимание!
+					</section>
+					
 			</div>
 		</div>
-
+		<!-- Библиотеки для математических рассчетов -->
+		<script src="plugin/algebrite/algebrite.bundle-for-browser.js"></script>
+		<script src="plugin/math.js/math.min.js"></script>
+		<script src="plugin/plotly/plotly.min.js"></script>
+		<script src="plugin/underscore/underscore-min.js"></script>
+        <!-- Стандартный наьор подключения -->
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
 		<script>
+			//Результат игры
+			let resultGame;
+
+			//Событие, чтобы скрипты начали выполняться только после загрузки
+			window.onload = () => {
+				//Нахождение периметра круга
+				document.querySelector('#getResult').onclick = () => {
+					//Получаем значение из полей ввода
+					let R = document.querySelector('#R').value;
+					//let P= 2*3.14*R;
+					//Ссылка на тег вывода результата
+					let result = document.querySelector('#result');
+					//Проверка полей на пустоту
+					if (R === '') {
+						return result.innerHTML = 'Вы не ввели радиус';
+					}
+					if (R < 0) {
+						return result.innerHTML = 'Такого радиуса не существует';
+					}
+					//Выводим периметр круга
+					return result.innerHTML = 2*3.14*R;
+				}
+				//Нахождение периметра трапеции
+				document.querySelector('#getResult1').onclick = () => {
+					//Получаем значение из полей ввода
+					let a = document.querySelector('#a').value;
+					let b = document.querySelector('#b').value;
+					let c = document.querySelector('#c').value;
+					let d = document.querySelector('#d').value;
+					var P =+a + +b + + c + +d;
+					//Ссылка на тег вывода результата
+					let result = document.querySelector('#result1');
+					//Проверка полей на пустоту
+					if (a === '' || b === '' || c === '' || d === '') {
+						return result.innerHTML = 'Вы не ввели значение';
+					}
+					if (a < 0 || b < 0 || c < 0 || d < 0) {
+						return result.innerHTML = 'Такой трапеции не существует';
+					}
+					//Выводим периметр трапеции
+					return result.innerHTML = P;
+				}
+				//Нахождение периметра треугольника
+				document.querySelector('#getResult2').onclick = () => {
+					//Получаем значение из полей ввода
+					let a1 = document.querySelector('#a1').value;
+					let b1 = document.querySelector('#b1').value;
+					let c1 = document.querySelector('#c1').value;
+					
+					//Ссылка на тег вывода результата
+					let result = document.querySelector('#result2');
+					//Проверка полей на пустоту
+					if (a1 === '' || b1 === '' || c1 === '' ) {
+						return result.innerHTML = 'Вы не ввели значение';
+					}
+					if (a1 < 0 || b1 < 0 || c1 < 0 ) {
+						return result.innerHTML = 'Такой трапеции не существует';
+					}
+					//Выводим периметр трапеции
+					return result.innerHTML =+ a1 + +b1 + +c1;
+				}
+			}
+
+		</script>	
+		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
-				hash: true,
+				hash: true, //При обновлении страницы, будем возвращаться на туже страницу
+				center: false, //отменим вертикальное центрирование
+				slideNumber: true, //Покажем номер слайды
+				math: {
+					notificationsEnabled: true, //включаем отображение ошибок katex
+				},
+				menu: {
+					number: true,
+					markers: true,
+					keyboard: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
+				},
+				//Подключаем LaTeX рендер
+				dependencies: [
+					{
+						src: 'plugin/math-katex/math-katex.js', //Подключаем рендер katex
+						async: true,
+						callback: () => {},
+					}, {
+						src: 'plugin/menu/menu.js',
+						async: true,
+					}],
+
+				//Рендер Маркдауна, Подвестка синтаксиса, Заметки
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
 		</script>
