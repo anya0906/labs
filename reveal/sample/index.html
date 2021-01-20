@@ -315,6 +315,23 @@
 						<img src="Треугольник.jpg" alt="круг" height="300px" width="300px">
 					</section>
 
+					<section>
+						<h2>Нахождение периметра параллелограмма</h2>
+						<!-- стороны треугольника -->
+						<label for="a2">$a=$</label>
+						<input type="text" id="a2">
+						<label for="b2">$b=$</label>
+						<input type="text" id="b2">
+						<!-- Кнопка запуска программы -->
+						<div class="center">
+						<input style="height:45px; font-size:35px" type="button" 
+						value="Посчитать периметр" id="getResult3">
+						<!-- Вывод результата -->
+						<output id="result3"></output>
+					    </div>
+						<img src="Параллелограмм.jpg" alt="круг" height="300px" width="300px">
+					</section>
+
 					<section class="center" data-menu-title="Заключительный слайд">
 						Спасибо за внимание!
 					</section>
@@ -392,6 +409,25 @@
 					}
 					//Выводим периметр трапеции
 					return result.innerHTML =+ a1 + +b1 + +c1;
+				}
+
+				//Нахождение периметра параллелограмма
+				document.querySelector('#getResult3').onclick = () => {
+					//Получаем значение из полей ввода
+					let a2 = document.querySelector('#a2').value;
+					let b2 = document.querySelector('#b2').value;
+					
+					//Ссылка на тег вывода результата
+					let result = document.querySelector('#result3');
+					//Проверка полей на пустоту
+					if (a2 === '' || b2 === ''  ) {
+						return result.innerHTML = 'Вы не ввели значение';
+					}
+					if (a2 < 0 || b2 < 0 ) {
+						return result.innerHTML = 'Такого параллелограмма не существует';
+					}
+					//Выводим периметр параллелограмма
+					return result.innerHTML = 2 * (+ a2 + +b2 );
 				}
 			}
 
