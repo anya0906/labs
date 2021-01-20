@@ -332,6 +332,22 @@
 						<img src="Параллелограмм.jpg" alt="круг" height="300px" width="300px">
 					</section>
 
+					<section>
+						<h2>Нахождение периметра квдрата и ромба</h2>
+						<!-- стороны треугольника -->
+						<label for="a3">$a=$</label>
+						<input type="text" id="a3">
+						<!-- Кнопка запуска программы -->
+						<div class="center">
+						<input style="height:45px; font-size:35px" type="button" 
+						value="Посчитать периметр" id="getResult4">
+						<!-- Вывод результата -->
+						<output id="result4"></output>
+					    </div>
+						<img src="Квадрат.jpg" alt="квадрат" height="300px" width="300px">
+						<img src="ромб.jpg" alt="квадрат" height="300px" width="300px">
+					</section>
+
 					<section class="center" data-menu-title="Заключительный слайд">
 						Спасибо за внимание!
 					</section>
@@ -358,7 +374,7 @@
 				document.querySelector('#getResult').onclick = () => {
 					//Получаем значение из полей ввода
 					let R = document.querySelector('#R').value;
-					//let P= 2*3.14*R;
+					
 					//Ссылка на тег вывода результата
 					let result = document.querySelector('#result');
 					//Проверка полей на пустоту
@@ -428,6 +444,24 @@
 					}
 					//Выводим периметр параллелограмма
 					return result.innerHTML = 2 * (+ a2 + +b2 );
+				}
+
+				//Нахождение периметра квадрата и ромба
+				document.querySelector('#getResult4').onclick = () => {
+					//Получаем значение из полей ввода
+					let a3 = document.querySelector('#a3').value;
+					
+					//Ссылка на тег вывода результата
+					let result = document.querySelector('#result4');
+					//Проверка полей на пустоту
+					if (a3 === ''  ) {
+						return result.innerHTML = 'Вы не ввели значение';
+					}
+					if (a3 < 0 ) {
+						return result.innerHTML = 'Такой фигуры не существует';
+					}
+					//Выводим периметр параллелограмма
+					return result.innerHTML = 4 *  a3;
 				}
 			}
 
